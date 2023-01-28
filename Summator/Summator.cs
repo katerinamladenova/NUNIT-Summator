@@ -8,16 +8,16 @@ namespace Summator
 {
     public static class Summator
     {
-        public static int Sum(int[] arr)
+        public static long Sum(int[] arr)
         {
-            if (arr == null || arr.Length == 0)
-            {
-                throw new ArgumentException("Array can't be null or empty");
-            } 
+           // if (arr == null || arr.Length == 0)
+            //{
+              // throw new ArgumentException("Array can't be null or empty");
+            //} 
 
-            int sum = arr[0];
+            long sum = 0;
 
-            for (int i = 1; i < arr.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
                 sum += arr[i];
             }
@@ -25,19 +25,16 @@ namespace Summator
             return sum;
         }
 
-        public static void Test_SumTwoNumbers()
+        public static double Average(int[] arr)
         {
-            if (Sum(new int[] { 1, 2 }) != 3)
+            double sum = 0;
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                throw new Exception("1+2 != 3");
+                sum += arr[i];
             }
-            else
-            {
-                Console.WriteLine("Test Pass");
-            }
+
+            return sum / arr.Length;
         }
-
-
-
     }
 }
