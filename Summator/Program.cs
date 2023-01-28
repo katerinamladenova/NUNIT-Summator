@@ -1,6 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-namespace Summator
+﻿namespace Summator
 {
     internal class Programm
     {
@@ -11,6 +9,3 @@ namespace Summator
 
     }
 }
-
-
-
